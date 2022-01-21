@@ -82,3 +82,32 @@ function calcularAreaCuadrado(){
         alert(area);
 
 }
+
+// Codigo del cuadrado
+console.group("Triangulo isoceles");
+
+function atrianguloi(lado1, lado2, base){
+    return Math.sqrt(Math.pow(lado1,2)-Math.pow((base/2),2));
+}
+
+function calcularAlturaTriangulo(){
+    // Esto permite obtener la etiqueta
+    const input1 = document.getElementById("inputTrianguloA");
+    const input2 = document.getElementById("inputTrianguloB");
+    const input3 = document.getElementById("inputTrianguloC");
+    // Para obtener el valor en la etiqueta
+    const value1 = input1.value;
+    const value2 = input2.value;
+    const value3 = input3.value;
+    if (value1 == value2) {
+    // Se calucla el perimetro de acuerdo con la funcion que esta arriba
+        const altura = atrianguloi(value1, value2, value3);
+        alert(altura);
+    }
+
+    else {
+        alert("No es un triangulo isoceles");
+    }
+}
+
+console.groupEnd()
