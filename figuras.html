@@ -33,6 +33,32 @@
         </form>
     </section>
 
+    <section class="triangulo">
+        <h2> Calcula la altura de un triángulo isósceles</h2>
+        <img src="./assets/triangulo.jpg" alt="">
+        <form class="section-form-triangulo" action="">
+            <div class="section-form-div-inputs">
+                <label class="section-form-label" for="inputTrianguloA">
+                    Escribe cuanto mide el  lado A del tirangulo:
+                </label>
+                <input class="input-lado-triangulo" id="inputTrianguloA" type="number"/>
+                <label class="section-form-label" for="inputTrianguloB">
+                    Escribe cuanto mide el  lado B del tirangulo:
+                </label>
+                <input class="input-lado-triangulo" id="inputTrianguloB" type="number"/>
+                <label class="section-form-label" for="inputTrianguloC">
+                    Escribe cuanto mide el  lado C del tirangulo:
+                </label>
+                <input class="input-lado-triangulo" id="inputTrianguloC" type="number"/>
+            </div>
+            <div>
+                <button type="button" class="css-button-rounded--blue" onclick="calcularAlturaTriangulo()">
+                    Calcular la altura del triangulo
+                </button>
+            </div>
+        </form>
+    </section>
+
     <!-- Connect javascript with HTML -->
     <script src="./figuras.js"></script>
     
